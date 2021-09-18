@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="cssCruz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<div class="divPrincipal">
+    <header class="classNavegacion">
+        <nav>
+            <img class="classLogo animate__bounceInLeft" src="../Multimedia/logo.jpeg" alt="logo">
+            <p  class="classUbicacion animate__lightSpeedInLeft"> Ente municipal de deporte y Recreacion
+                Mar del plata, Buenos Aires
+            </p>
+            <ul class="classList">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="informacionCursada.html">Informacion de cursada</a></li>
+                <li><a href="egresados.html">Egresados</a></li>
+                <li><a href="quienessomos.html">Quienes somos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="animate__bounceInRight">Contacto</h1>
+        <p>Si queres contactarte con nosotros, dejanos tus datos y comenta que lo que te parece atractivo
+            de esta profesion!
+        </p>
+    <div class="divContacto">
+        <form action="server.php" method="post">
+
+                     
+                    <fieldset class="classFieldset">
+                    
+                    <legend>Datos personales</legend>
+                <div id="datosInput">
+                    <label for="Nombre y Apellido">Nombre y Apellido</label>
+                    <input class="inputClass" type="text" id="Nombre y Apellido" placeholder="Escriba aqui">
+                                        
+                    <label for="requisitos">Titulo Secundario</label>
+                    <input class="inputClass" type="checkbox" id="requisitos">
+                    
+                    <label for="requisitos">Edad +18</label>
+                    <input class="inputClass" type="checkbox" id="requisitos">
+                </div>
+                    </fieldset>
+
+                    <fieldset class="classFieldset">
+                    
+                    <legend>Sexo</legend>
+                <div id="sexoInput">
+                    <label for="sexo">Femenino</label>
+                    <input class="inputClass" type="radio" id="sexo"   name="sexo">
+
+                    <label for="Masculino">Masculino</label>
+                    <input class="inputClass" type="radio" id="Masculino"   name="sexo">
+
+                    <label for="Otros">Otros</label>
+                    <input class="inputClass" type="radio" id="Otros"   name="sexo">
+                </div>
+                    </fieldset>
+
+                    <fieldset class="classFieldset">
+                    <legend>Profesion</legend>
+                <div id="profesionInput">
+                    <label for="trabajo">Eliga una opcion</label>
+                    <select class="inputClass" name="Profesion" id="trabajo">
+                        <option value="1">Medico</option>
+                        <option value="2">Profesor de educacion fisica</option>
+                        <option value="3">Enfermero</option>
+                        <option value="4">Otros</option>
+                    </select>
+                </div>
+                    </fieldset>
+
+                    <fieldset class="classFieldset">
+                
+                    <legend>Comentarios</legend>
+                <div id="comentariosInput">
+                    <label class="classComentarios" for="comentarios">Dejenos su comentario escrito aqui</label>
+                    <textarea class="inputClass" name="Comentarios" id="comentarios" cols="60" rows="20"></textarea>
+                </div>      
+                
+                    </fieldset>
+                
+                <input class="inputButton" type="reset" value="Resetear informacion">
+                <input class="inputButton" type="submit" value="Enviar">
+            
+        </form>
+    </div>
+    </main>  
+    <footer class="classFooter">
+        <span>
+            <p class="classRedes"> Av. Jubilados 853, Mar del plata</p>
+            <a class="redesSociales" href="https://www.instagram.com/guardavidasaristides/">Seguinos en instagram</a>
+            <a class="redesSociales" href="https://www.facebook.com/guardavidas.aristideshernandez">Seguinos en facebook</a>
+        </span>
+    </footer>
+</div>
+</body>
+</html>
